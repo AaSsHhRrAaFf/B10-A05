@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog - Donate Bangladesh</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .font-lexend {
+        font-family: "Lexend", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="font-lexend">
+    <header class="bg-white shadow-md sticky top-0 z-50">
+      <div
+        class="container mx-auto flex justify-between items-center py-4 px-6"
+      >
+        <!-- Home Button (Left) -->
+        <a
+          href="./index.html"
+          class="px-4 py-2 bg-green-500 text-white rounded-full transition hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-300"
+        >
+          Home
+        </a>
+
+        <!-- Logo and Brand Name (Center) -->
+        <div class="flex items-center">
+          <img
+            src="./assets/logo.png"
+            alt="Donate Bangladesh Logo"
+            class="h-10 w-10 mr-3"
+          />
+          <h1 class="text-2xl font-bold text-gray-800">Donate Bangladesh</h1>
+        </div>
+
+        <!-- Spacer (Right) for Symmetry -->
+        <div class="h-10 w-10"></div>
+      </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-8">
+      <h2 class="text-3xl text-center font-bold mb-4">Blog</h2>
+      <div class="max-w-lg mx-auto my-8">
+        <!-- Accordion Item 1 -->
+        <div class="collapse bg-base-200 mb-2">
+          <input type="radio" name="my-accordion-1" checked="checked" />
+          <div class="collapse-title text-xl font-medium">
+            What is DOM Manipulation?
+          </div>
+          <div class="collapse-content">
+            <p>
+              DOM Manipulation refers to the process of dynamically modifying
+              the content, structure, or style of a webpage using JavaScript.
+              It's a powerful way to create interactive and responsive user
+              interfaces by selecting, adding, deleting, or altering elements in
+              the DOM tree.
+            </p>
+          </div>
+        </div>
+      
+        <!-- Accordion Item 2 -->
+        <div class="collapse bg-base-200 mb-2">
+          <input type="radio" name="my-accordion-1" />
+          <div class="collapse-title text-xl font-medium">
+            Why is DOM Manipulation Important?
+          </div>
+          <div class="collapse-content">
+            <p>
+              DOM Manipulation is crucial for creating dynamic web applications.
+              It allows developers to update the UI in response to user actions
+              without reloading the page, resulting in a more seamless and
+              interactive user experience.
+            </p>
+          </div>
+        </div>
+      
+        <!-- Accordion Item 3 -->
+        <div class="collapse bg-base-200 mb-2">
+          <input type="radio" name="my-accordion-1" />
+          <div class="collapse-title text-xl font-medium">
+            Common Methods for DOM Manipulation
+          </div>
+          <div class="collapse-content">
+            <p>Some common methods for DOM manipulation include:</p>
+            <ul class="list-disc list-inside ml-4 mt-2">
+              <li>
+                <strong>document.getElementById()</strong> - Selects an element
+                by its ID.
+              </li>
+              <li>
+                <strong>document.querySelector()</strong> - Selects the first
+                element that matches a CSS selector.
+              </li>
+              <li>
+                <strong>element.appendChild()</strong> - Adds a new child
+                element to a specified parent element.
+              </li>
+              <li>
+                <strong>element.innerHTML</strong> - Gets or sets the HTML
+                content inside an element.
+              </li>
+              <li>
+                <strong>element.addEventListener()</strong> - Attaches an event
+                handler to an element.
+              </li>
+            </ul>
+          </div>
+        </div>
+      
+        <!-- Accordion Item 4 -->
+        <div class="collapse bg-base-200">
+          <input type="radio" name="my-accordion-1" />
+          <div class="collapse-title text-xl font-medium">
+            Best Practices for DOM Manipulation
+          </div>
+          <div class="collapse-content">
+            <p>
+              DOM manipulation can have a significant impact on the performance
+              and maintainability of your web applications. Here are some best
+              practices to follow:
+            </p>
+            <ul class="list-disc list-inside ml-4 mt-2">
+              <li>
+                <strong>Minimize Reflows and Repaints:</strong> Avoid frequent
+                changes to the layout and styling of elements, as these
+                operations are costly in terms of performance.
+              </li>
+              <li>
+                <strong>Batch DOM Updates:</strong> Whenever possible, batch
+                multiple updates together instead of making individual changes
+                to the DOM repeatedly.
+              </li>
+              <li>
+                <strong>Use Document Fragments:</strong> When adding multiple
+                elements, use <code>document.createDocumentFragment()</code> to
+                add them in a single operation.
+              </li>
+              <li>
+                <strong>Avoid Inline Styles:</strong> Instead of using inline
+                styles, use CSS classes to manage styling. This helps keep your
+                code clean and easier to maintain.
+              </li>
+              <li>
+                <strong>Utilize Event Delegation:</strong> Attach event
+                listeners to a common ancestor rather than each individual
+                element to improve performance and reduce memory usage.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      
+    </main>
+  </body>
+</html>
