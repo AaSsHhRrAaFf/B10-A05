@@ -60,32 +60,26 @@
       }
       .blur-bg {
         backdrop-filter: blur(8px);
-        background-color: rgba(
-          249,
-          247,
-          243,
-          0.5
-        ); 
+        background-color: rgba(249, 247, 243, 0.5);
       }
     </style>
   </head>
   <body class="font-lexend">
-    
     <header
       id="main-header"
-      class="bg-custom-dark shadow-md p-6 sticky top-0 z-50 transition-all duration-300"
+      class="bg-custom-dark shadow-md p-4 sm:p-6 sticky top-0 z-50 transition-all duration-300"
     >
-      <div class="container mx-auto flex items-center py-4 px-6 relative">
-       
+      <div
+        class="container mx-auto flex flex-col sm:flex-row items-center py-4 px-6 relative"
+      >
         <a
           href="./blog.html"
-          class="px-4 py-2 bg-green-500 text-white rounded-full transition hover:bg-green-600 absolute left-6"
+          class="px-4 py-2 bg-green-500 text-white rounded-full transition hover:bg-green-600 mb-4 sm:mb-0 sm:absolute sm:left-6"
         >
           Blog
         </a>
 
-       
-        <div class="flex-grow flex justify-center items-center">
+        <div class="flex-grow flex justify-center items-center mb-4 sm:mb-0">
           <img
             src="./assets/logo.png"
             alt="Donate icon"
@@ -96,20 +90,16 @@
           </h1>
         </div>
 
-       
         <div
-          class="flex items-center bg-yellow-500 text-white px-4 py-2 rounded-full shadow-md absolute right-6"
+          class="flex items-center bg-yellow-500 text-white px-4 py-2 rounded-full shadow-md sm:absolute sm:right-6"
         >
           <img src="./assets/coin.png" alt="Coin" class="w-6 h-6 mr-2" />
           <span id="total-balance" class="font-medium">5500</span> BDT
         </div>
       </div>
-    </header>
-
-    <main class="container mx-auto px-4 py-8">
       <div
         id="sticky-buttons"
-        class="sticky top-[110px] z-40 bg-white shadow-md py-4 transition-all duration-300"
+        class="sticky top-[110px] z-40 py-4 transition-all duration-300"
       >
         <div class="container mx-auto px-4 flex justify-center items-center">
           <button
@@ -128,7 +118,9 @@
           </button>
         </div>
       </div>
+    </header>
 
+    <main class="container mx-auto px-4 py-8">
       <div id="donation-cards" class="space-y-8">
         <!-- Donation Cards Here -->
         <div
@@ -307,13 +299,10 @@
             </div>
           </div>
         </div>
-        
       </div>
       <div>
         <!-- History Section Here -->
-        <ul id="history-section" class="hidden">
-          
-        </ul>
+        <ul id="history-section" class="hidden"></ul>
       </div>
     </main>
     <div id="donation-modal" class="hidden modal-backdrop">
@@ -362,7 +351,6 @@
         var scrollPosition = window.scrollY;
 
         if (scrollPosition > 50) {
-          
           header.classList.add("blur-bg");
           stickyButtons.classList.add("blur-bg");
         } else {
@@ -370,7 +358,6 @@
           stickyButtons.classList.remove("blur-bg");
         }
 
-        
         if (scrollPosition > 50) {
           stickyButtons.classList.add("shadow-md");
         } else {
